@@ -1,0 +1,12 @@
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /robots.txt HTTP/1.1" 200 25
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET / HTTP/1.1" 302 -
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /index.php?r=site%2Flogin HTTP/1.1" 200 29524
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/be3a8b2/css/bootstrap.css HTTP/1.1" 200 146010
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /css/site.css HTTP/1.1" 200 1922
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/7a5ad00c/jquery.js HTTP/1.1" 200 268039
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/2c809eeb/yii.validation.js HTTP/1.1" 200 15760
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/2c809eeb/yii.activeForm.js HTTP/1.1" 200 32614
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/2c809eeb/yii.js HTTP/1.1" 200 20203
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /assets/be3a8b2/js/bootstrap.js HTTP/1.1" 200 69707
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=5add63ca175fe HTTP/1.1" 200 6954
+127.0.0.1 - - [23/Apr/2018:11:40:42 +0700] "GET /favicon.ico HTTP/1.1" 200 318
