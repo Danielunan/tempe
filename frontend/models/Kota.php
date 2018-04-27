@@ -26,7 +26,7 @@ class Kota extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            // [['nama_kota'], required],
+            // [['nama_kota'], string],
             [['nama_kota'], 'string', 'max' => 255],
             // [['created_at', 'updated_at'], 'datetime']
         ];
