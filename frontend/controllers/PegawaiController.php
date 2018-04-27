@@ -10,6 +10,7 @@ namespace frontend\controllers;
 use Yii;
 use app\models\Pegawai;
 use yii\web\Controller;
+use yii\data\ActiveDataProvider;
 
 // manual CRUD
 class PegawaiController extends Controller
@@ -21,8 +22,6 @@ class PegawaiController extends Controller
 
         // data baru
         if($model->load(Yii::$app->request->post()) && $model->save()) {
-            // var_dump($model->validate());
-            // exit();
             return $this->redirect(['index']);
         }
             return $this->render('create', ['model' => $model]);
@@ -33,7 +32,15 @@ class PegawaiController extends Controller
     {
         $pegawai = Pegawai::find()->all();
 
-        return $this->render('index', ['model'=>$pegawai]);
+        $provider = new ActiveDataProvider([ // activeDataProvider untuk menampung data dari model yang mau ditampilin seperti model pegawai. 
+            'query' => Pegawai::find(),
+            'pagination' => [                // halaman data yang dibagi bagi per halaman
+                'pageSize' => 20,
+            ],
+        ]);
+        return $this->render('index', [
+            'dataProvider' => $provider, // dataProvider fungsinya untuk wadah, ilustrasinya seperti wadah celengan, celengan itu value nya yang ada di query 
+        ]);
     }
 
     // UPDATE or EDIT

@@ -34,4 +34,9 @@ class Pegawai extends \yii\db\ActiveRecord // untuk membuat model, pakai activeR
             [['domisili'], 'integer'],
         ]; 
     }
+
+    public function getKota()
+    {
+        return $this->hasOne(Kota::className(), ['id' => 'domisili']);
+    }
 }
